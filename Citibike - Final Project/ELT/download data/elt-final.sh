@@ -1,9 +1,9 @@
 #! /bin/bash
 
 ## Install necessary programs
-yum install unzip
-yum install openssl-devel
-yum install libcurl-devel
+yum install -y unzip
+yum install -y openssl-devel
+yum install -y libcurl-devel
 
 #Download the data
 
