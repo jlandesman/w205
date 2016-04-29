@@ -1,0 +1,22 @@
+This repository contains ETL scripts, analysis scripts, and results for an analysis of biking speed drop-off by age in the Citi Bike data, through NYC Open Data.
+
+The directories and their contents are listed below:
+Documentation
+- Project Proposal
+- Results presentation slides
+- Final report write-up
+ELT
+- ELT/download data: bash script to download historical Citi Bike data from May 2013 (when the program was introduced) to February 2016
+- ELT/load to postgres: Postgres script to load data downloaded above into Postgres so it can be used for analysis
+R code
+- R code/google maps: R script for downloading and analyzing data using the estimated biking time from Google Maps as a benchmark
+- R code/sort and graph: R script for analyzing data without the Google biking time benchmark, using a grouping mechanism to pair rides between the same stations at the same time
+- R code/exploratory maps: R scripts for two exploratory maps of the Citi Bike data using ggmap
+Google Maps Data
+- Data downloaded from the Google Maps API for reuse, since the API imposes rate limits on API calls
+Graphs
+- A collection of 20 graphs of the Citi Bike data, including both exploratory analysis and final results. Includes histograms of the full data set, density graphs of time comparisons, and mean and median slowdown as age increases by gender
+Maps
+- Two exploratory maps of the Citi Bike data, one showing the growth of the program over time, and the other showing the path of one bike during May 2014
+
+
